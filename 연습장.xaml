@@ -808,7 +808,7 @@
                       <InArgument x:TypeArguments="njl:JObject" xml:space="preserve">[JObject.FromObject(
 	New With{
 		key.role = "system",
-		key.content = "url 주소로 접속해서 기사 혹은 뉴스의 내용을 정리해줘.."
+		key.content = "url 주소로 접속해서 내용을 정리해줘.."
 	}
 )]</InArgument>
                     </scg:List>
