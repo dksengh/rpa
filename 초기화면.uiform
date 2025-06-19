@@ -1,0 +1,84 @@
+﻿{
+  "Metadata": {
+    "Id": "e96615e7-da2d-4ffe-827b-c4e7c50f856f",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "초기화면",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "로그인(이름)",
+        "tableView": true,
+        "key": "login",
+        "conditional": {
+          "show": false,
+          "when": "New",
+          "eq": "true"
+        },
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "회원가입(이름)",
+        "hidden": true,
+        "tableView": true,
+        "key": "New_name",
+        "conditional": {
+          "show": true,
+          "when": "New",
+          "eq": "true"
+        },
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "회원가입(이메일)",
+        "hidden": true,
+        "tableView": true,
+        "key": "New_mail",
+        "conditional": {
+          "show": true,
+          "when": "New",
+          "eq": "true"
+        },
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "회원가입(비밀번호)",
+        "hidden": true,
+        "tableView": true,
+        "key": "New_password",
+        "conditional": {
+          "show": true,
+          "when": "New",
+          "eq": "true"
+        },
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "회원가입",
+        "tableView": false,
+        "defaultValue": false,
+        "key": "New",
+        "type": "checkbox",
+        "input": true
+      },
+      {
+        "label": "Submit",
+        "tableView": false,
+        "key": "submit",
+        "type": "button",
+        "input": true,
+        "saveOnEnter": false
+      }
+    ]
+  }
+}
